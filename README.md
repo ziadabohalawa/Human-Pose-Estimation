@@ -80,16 +80,12 @@ mkdir -p models
 wget https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth \
      -O models/human-pose.pth
 ```
-### 6 Provide AWS credentials (one of)
-Recommended: attach IAM role (already done at launch), or
 
-aws configure and enter Access Key / Secret.
-
-### 7 Run the web app
+### 6 Run the web app
 ```
 python3 app.py          
 ```
-### 8 Open in browser
+### 7 Open in browser
 ```
 http://<EC2-Public-IP>:5000
 ```
