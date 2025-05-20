@@ -40,7 +40,6 @@ skeleton & JSON
 
 ## Quick Start (Step-by-Step)
 
-> **Region used below:** `eu-central-1 (Frankfurt)`
 
 ### 0  Prerequisites
 | What | Value |
@@ -50,11 +49,11 @@ skeleton & JSON
 
 ### 1  Launch EC2
 
-AMI : Ubuntu 22.04
-Type : t3.large
-EBS size : 20 GB
-Key pair : pose-estimation.pem
-IAM role : AmazonS3FullAccess (or scoped S3 role)
+- AMI : Ubuntu 22.04
+- Type : t3.large
+- EBS size : 20 GB
+- Key pair : pose-estimation.pem
+- IAM role : AmazonS3FullAccess (or scoped S3 role)
 
 
 ### 2  SSH & **clone the repo**
@@ -94,7 +93,7 @@ python3 app.py
 ```
 http://<EC2-Public-IP>:5000
 ```
-Enter e.g. images/person1.jpg ➜ get skeleton overlay + keypoints JSON.
+Upload and Image ➜ get skeleton overlay + keypoints JSON.
 
 ## Acknowledgements
 Lightweight Human Pose Estimation
