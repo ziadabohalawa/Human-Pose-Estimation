@@ -1,4 +1,4 @@
-# Human-Pose Estimation on AWS (CPU-only)
+# Human-Pose Estimation on AWS 
 
 End-to-end demo that runs **Lightweight OpenPose** on images stored in **Amazon S3**, using an **EC2 t-instance**.  
 A tiny Flask UI lets you upload an image → returns an annotated image + JSON key-points.
