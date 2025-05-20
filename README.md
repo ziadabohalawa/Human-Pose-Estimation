@@ -6,13 +6,6 @@ A tiny Flask UI lets you upload an image → returns an annotated image + JSON k
 ![](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/7c7340b16b00c75a5f49d6003b91e6e96dc08b4f/output.jpeg)
 ---
 
-##  Architecture
-
-![architecture_diagram](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/1ccb9b36c684d75e140ef20b44fd1d7dbd5cbfb5/pose_etimation_diagram.png)
-
-
----
-
 ## Tech Stack
 
 | Layer / Purpose | Technology |
@@ -26,6 +19,14 @@ A tiny Flask UI lets you upload an image → returns an annotated image + JSON k
 | Other           | boto3, python-magic |
 
 ---
+
+##  Architecture
+
+![architecture_diagram](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/1ccb9b36c684d75e140ef20b44fd1d7dbd5cbfb5/pose_etimation_diagram.png)
+
+
+---
+
 
 ## Quick Start (Step-by-Step)
 
