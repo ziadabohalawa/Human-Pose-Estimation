@@ -7,19 +7,7 @@ A tiny Flask UI lets you upload an image → returns an annotated image + JSON k
 
 ##  Architecture
 
-Browser ───HTTP─┐
-│ 1. POST image-key
-┌─────▼────────────────────────────────────┐
-│ Flask app (app.py) on EC2 │
-│ • downloads original from S3 │
-│ • runs pose estimation (PyTorch CPU) │
-│ • uploads results to S3 │
-│ • embeds JPG (Base-64) in HTML │
-└─────┬────────────────────────────────────┘
-│ 2. GET / renders result page
-▼
-Browser shows
-skeleton & JSON
+![architecture_diagram](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/1ccb9b36c684d75e140ef20b44fd1d7dbd5cbfb5/pose_etimation_diagram.png)
 
 
 ---
