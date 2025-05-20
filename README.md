@@ -20,7 +20,7 @@ A tiny Flask UI lets you upload an image → returns an annotated image + JSON k
 
 ---
 
-##  Architecture
+##  System Architecture
 
 ![architecture_diagram](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/1ccb9b36c684d75e140ef20b44fd1d7dbd5cbfb5/pose_etimation_diagram.png)
 
