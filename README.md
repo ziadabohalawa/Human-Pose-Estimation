@@ -2,7 +2,7 @@
 
 End-to-end demo that runs **Lightweight OpenPose** on images stored in **Amazon S3**, using an **EC2 t-instance**.  
 A tiny Flask UI lets you upload an image → returns an annotated image + JSON key-points.
-
+![](https://github.com/ziadabohalawa/Human-Pose-Estimation/blob/7c7340b16b00c75a5f49d6003b91e6e96dc08b4f/output.jpeg)
 ---
 
 ##  Architecture
