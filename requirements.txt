@@ -1,0 +1,11 @@
+boto3>=1.26.0
+Flask>=2.2.3
+numpy>=1.14.0
+opencv-python>=3.4.0.14
+pillow>=9.4.0
+python-magic>=0.4.27
+pycocotools==2.0.0
+torch>=0.4.1
+torchvision>=0.2.1
+Werkzeug>=2.2.3
+Cython>=0.29
