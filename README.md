@@ -1,6 +1,6 @@
 # Human-Pose Estimation on AWS (CPU-only)
 
-End-to-end demo that runs **Lightweight OpenPose** on images stored in **Amazon S3**, using an inexpensive **EC2 t-instance** (no GPU).  
+End-to-end demo that runs **Lightweight OpenPose** on images stored in **Amazon S3**, using an **EC2 t-instance**.  
 A tiny Flask UI lets you enter an S3 key → returns an annotated image + JSON key-points.
 
 ---
@@ -21,9 +21,6 @@ Browser ───HTTP─┐
 Browser shows
 skeleton & JSON
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -31,11 +28,11 @@ Edit
 
 | Layer / Purpose | Technology |
 |-----------------|------------|
-| Web backend     | **Flask 2** |
-| ML framework    | **PyTorch CPU** |
+| Web backend     | Flask 2 |
+| ML framework    | PyTorch CPU |
 | Pose model      | Lightweight Human Pose Estimation (MobileNet-v1) |
-| Storage         | **Amazon S3** (`images/`, `results/`) |
-| Compute         | **EC2 t3.large** (Ubuntu 22.04) |
+| Storage         | Amazon S3 (`images/`, `results/`) |
+| Compute         | EC2 t3.large (Ubuntu 22.04) |
 | Image libs      | OpenCV 4, Pillow |
 | Other           | boto3, python-magic |
 
@@ -48,8 +45,7 @@ Edit
 ### 0  Prerequisites
 | What | Value |
 |------|-------|
-| **S3 bucket** | `ziad-pose-estimation` (private) |
-| **Images**    | Upload to `images/` prefix e.g. `images/person1.jpg` |
+| **S3 bucket** | Example: `pose-estimation-bucket` |
 | **Security Group** | Inbound: TCP 22 (SSH), TCP 5000 (HTTP) |
 
 ### 1  Launch EC2
@@ -60,9 +56,6 @@ EBS size : 20 GB
 Key pair : pose-estimation.pem
 IAM role : AmazonS3FullAccess (or scoped S3 role)
 
-bash
-Copy
-Edit
 
 ### 2  SSH & **clone the repo**
 
